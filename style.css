@@ -1,0 +1,52 @@
+.rocket-1 {
+    background: red;
+}
+
+.rocket-2 {
+    background: yellow;
+}
+
+.rocket-3 {
+    background: green;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    background: rgba(224,214,233, 0.5);
+}
+
+.rockets {
+    width: 500px;
+    height: 100px;
+    transition-duration: 2s;
+    transition-property: transform;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid red;
+}
+
+.container:hover .rockets{
+    transform: translateX(250%);
+}
+
+.rocket-1 {
+    transition-timing-function: cubic-bezier(.7,0,.94,1.23);
+}
+
+.rocket-2 {
+    transition-timing-function: cubic-bezier(.47,.08,.35,.89);
+}
+
+.rocket-3 {
+    transition-timing-function: cubic-bezier(.05,.37,.51,.75);
+}
